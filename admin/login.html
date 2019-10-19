@@ -62,7 +62,8 @@
           if (backData.code === 400) {
             alert(backData.msg);
           } else if (backData.code === 200) {
-            alert(backData.msg);
+            // alert(backData.msg);
+            localStorage.setItem('token', backData.token)
             window.location = './index.html'
           }
 
